@@ -1,9 +1,6 @@
 import { Module } from '@nestjs/common';
-
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { SignalrController } from './signalr.controller';
 import { ConfigModule } from '@nestjs/config';
-import { SignalrModule } from '../signalr/signalr.module';
 
 @Module({
   imports: [
@@ -13,9 +10,7 @@ import { SignalrModule } from '../signalr/signalr.module';
       expandVariables: true,
       // cache: true,
     }),
-    SignalrModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [SignalrController],
 })
-export class AppModule {}
+export class SignalrModule {}
