@@ -10,4 +10,8 @@ import { RouterModule } from '@angular/router';
 })
 export class AppComponent {
   title = 'app-angular-1';
+
+  constructor() {
+    console.log('PUBLIC_GREETING', process.env.PUBLIC_GREETING);
+  }
 }
