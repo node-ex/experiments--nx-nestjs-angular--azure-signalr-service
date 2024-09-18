@@ -183,8 +183,8 @@ pnpm exec nx show projects
 pnpm exec nx show project app-nest-1
 pnpm exec nx show --json project app-nest-1
 pnpm exec nx show --json project app-nest-1 | jq
+```
 
 ### Environment variables
 
-Copy `.env.template` as `.env` and change variable values as needed. Only variables with a `PUBLIC_` suffix are available in `app-angular-1`.
-```
+Copy `.env.template` as `.env` and change variable values as needed. Only variables with a `PUBLIC_` prefix are available in `app-angular-1`.
